@@ -1,0 +1,44 @@
+
+
+/************************************************************** TAGS SELECTOR *******************************************/
+body {
+  background-color: #d2f3e0;
+}
+
+h1 {
+  color: #c10000;
+}
+
+p {
+  color: #ff4949;
+}
+
+table {
+  background-color: #feb9c8;
+}
+
+hr {
+  background-color: inherit;
+  width: 30%;
+  border-style: dotted none none;
+  border-width: thick;
+  border-spacing: inherit;
+  border-color: white
+}
+img:hover{
+  background-color: gold;
+}
+/************************************************************** CLASS SELECTOR *******************************************/
+
+.disney {
+  background-color: red;
+}
+.flag {
+  background-color: blue;
+  border-radius: 100%;
+}
+
+/************************************************************** ID SELECTOR *******************************************/
+#para {
+  color: blue;
+}
