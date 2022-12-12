@@ -1,0 +1,194 @@
+
+:root {
+  --light: #b3e6cc;
+  --medium: #00b386
+  --dark: #000000;
+  --shadow: 0 1px 5px rgba(213, 206, 166, .8);
+  --primary: #45B6FE;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: #b3e6cc; /* Soft green - #dac7e6; /* Muted purple */
+  margin: 0;
+  text-align: center;
+
+}
+
+h1 {
+  margin-top: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  color: #000000;
+}
+
+hr {
+  border-color: #000000;
+  border-spacing: inherit;
+  border-style: dotted none none;
+  border-width: 10px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+img {
+  background-color: blue;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  text-align: center;
+  background-color: #000;
+
+}
+
+nav li:hover {
+  /* new styles */
+  background-color: #00b386;  /* Soft green */
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.8); 
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+nav li {
+  margin-right: 10px;
+  display: inline-block;
+  /* new styles */
+  background-color: #333;  /* Dark gray */
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.5); 
+  transition: all 0.2s ease-in-out; 
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.header {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px 0 0 0;;
+}
+
+.header p{
+  color: #ffffff;
+}
+/* Add styles for the portfolio section */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.about {
+  width: 500px;  /* Adjust as needed */
+  margin: 0 auto;
+  background-color: var(--light);  /* Use the --light variable for the background color */
+  padding: 20px;
+  text-align: center;
+
+  /* Add a border and box shadow to give the box a 3D effect */
+  border: 2px solid var(--medium);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  /* Add a background image or gradient for a more visually interesting look */
+  background-image: linear-gradient(to bottom, var(--light), var(--medium));
+
+  /* Add a game-like font and font color */
+  font-family: "8-Bit Madness", cursive;
+  color: #333;
+
+  /* Add a drop shadow to give the text a more "in-game" look */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  /* Add a border to enhance the glass-like appearance */
+  border: 20px solid rgba(255, 255, 255, 0.2);
+}
+
+.about p {
+  color: var(--dark);  /* Use the --dark variable for the text color */
+  padding: 20px 0px 20px 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    width: 100%;  /* Set the width to 100% to fill the available space */
+    height: auto;  /* Adjust the height as needed */
+  }
+}
+/* Add styles for the contact section */
+.contact {
+  text-align: center;
+  margin: 20px auto;
+  width: 50%;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact label {
+  margin: 10px 0;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+/* Add styles for the blog section */
+.blog article {
+  margin: 20px auto;
+  width: 50%;
+  text-align: left;
+}
+
+.blog img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px;
+  margin-top: 20px;
+}
+footer p{
+  color: #ffffff;
+}
+
