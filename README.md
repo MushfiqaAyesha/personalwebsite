@@ -1,3 +1,3 @@
-# personalwebsite
+# portfolio
 
-A simple website with two pages and no content.
+https://mushfiqaayesha.github.io/portfolio
