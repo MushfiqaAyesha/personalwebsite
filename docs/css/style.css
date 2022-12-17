@@ -1,8 +1,9 @@
 
 :root {
-  --light: #b3e6cc;
-  --medium: #00b386
+  --light: #b3e6ccd8 ; 
+  --medium: rgb(0, 179, 134);
   --dark: #000000;
+  --dark-purple:#26053b;
   --shadow: 0 1px 5px rgba(213, 206, 166, .8);
   --primary: #45B6FE;
 }
@@ -10,7 +11,10 @@
 
 body {
   font-family: sans-serif;
-  background-color: #b3e6cc; /* Soft green - #dac7e6; /* Muted purple */
+  background-color: #0eac5a; /* Soft green - #dac7e6; /* Muted purple */
+  background-image: url("../images/aqua.png");
+  background-image: linear-gradient(to bottom, #000000, #200431);
+  
   margin: 0;
   text-align: center;
 
@@ -49,40 +53,42 @@ nav {
   justify-content: center;
   padding: 0px 20px;
   text-align: center;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0);
 
 }
-
-nav li:hover {
-  /* new styles */
-  background-color: #00b386;  /* Soft green */
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.8); 
-  transform: scale(1.1);
-  border-radius: 10px;
-}
-
 nav li {
   margin-right: 10px;
   display: inline-block;
   /* new styles */
-  background-color: #333;  /* Dark gray */
+  background-color: #26053b;  /* Dark gray */
   padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.5); 
-  transition: all 0.2s ease-in-out; 
+  box-shadow: 0px 3px 6px #8512cc85;
+  transition: all 0.2s ease-in-out;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+  border-radius: 5%;
+
+  /* 3D button styles */
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateX(20deg) translateX(8px);
+}
+
+nav li:hover {
+  /* new styles */
+  background-color: #26053b;  /* Soft green */
+  box-shadow: 0px 5px 10px rgba(255, 0, 234, 0.986);
+  transform: scale(1.1) rotateX(-20deg) translateY(5px);
+  border-radius: 8%;
 }
 
 nav li a {
   color: #fff;
   text-decoration: none;
 }
-
-
 .header {
-  background-color: #000000;
+  background-color: #00000015;
   color: #ffffff;
   padding: 20px 0 0 0;;
 }
@@ -95,6 +101,7 @@ nav li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: white;
 }
 
 .portfolio-item {
@@ -108,19 +115,28 @@ nav li a {
   border-radius: 5px;
 }
 
+.black{
+  color: #000;
+}
+.white{
+  color:#fff;
+}
 .about {
   width: 500px;  /* Adjust as needed */
   margin: 0 auto;
   background-color: var(--light);  /* Use the --light variable for the background color */
   padding: 20px;
   text-align: center;
+  
+
 
   /* Add a border and box shadow to give the box a 3D effect */
   border: 2px solid var(--medium);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
   /* Add a background image or gradient for a more visually interesting look */
-  background-image: linear-gradient(to bottom, var(--light), var(--medium));
+ background-image: linear-gradient(to bottom, #c2b3b3bd,#26053b);
+
 
   /* Add a game-like font and font color */
   font-family: "8-Bit Madness", cursive;
@@ -144,43 +160,7 @@ nav li a {
     height: auto;  /* Adjust the height as needed */
   }
 }
-/* Add styles for the contact section */
-.contact {
-  text-align: center;
-  margin: 20px auto;
-  width: 50%;
-}
 
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contact label {
-  margin: 10px 0;
-}
-
-.contact input[type="text"],
-.contact input[type="email"],
-.contact textarea {
-  padding: 5px;
-  border: 1px solid #ccc;
-  width: 100%;
-}
-
-/* Add styles for the blog section */
-.blog article {
-  margin: 20px auto;
-  width: 50%;
-  text-align: left;
-}
-
-.blog img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
 footer {
   width: 100%;
   background-color: #000000;
