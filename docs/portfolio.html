@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Mushfiqa Ayesha - Game Developer</title>
+    <title>Mushfiqa Ayesha - Game Developer Portfolio</title>
     <link rel="icon" type="image/x-icon" href="media/favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -60,39 +59,44 @@
       </nav>
 
       <main class="main-content">
-        <div id="about" class="section about">
-          <h2 class="persona-text" data-text="Player Profile: Mushfiqa Ayesha">
-            Player Profile: Mushfiqa Ayesha
-          </h2>
-          <div class="about-content">
-            <div class="about-text">
-              <p>
-                Welcome to my game development universe! I'm Mushfiqa Ayesha, a
-                passionate Level 99 Game Developer with a quest to create
-                immersive and unforgettable gaming experiences.
-              </p>
-              <p>My skill tree includes:</p>
-              <ul>
-                <li>🎮 Game Design Mastery</li>
-                <li>💻 Code Wizardry</li>
-                <li>🎨 Artistic Vision</li>
-                <li>🧠 Problem-Solving Expertise</li>
-              </ul>
-              <p>
-                With a strong foundation in various game development tools and
-                technologies, I bring creativity and technical expertise to
-                every project. My mission is to push the boundaries of
-                interactive entertainment and create games that resonate with
-                players around the world.
-              </p>
-              <p>
-                Ready to embark on an epic game development journey? Let's team
-                up and create something extraordinary!
-              </p>
-            </div>
+        <h2 class="persona-text" data-text="My Game Portfolio">
+          My Game Portfolio
+        </h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <h3 class="persona-text" data-text="Aqua Adventures">
+              Aqua Adventures
+            </h3>
+            <video width="100%" height="auto" controls autoplay loop muted>
+              <source src="media/aqua_adventures.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p>
+              A collection game about marine animals using patterns, colors,
+              genetics, and upgrade mechanics. Features ShaderGraph textures and
+              procedural animation.
+            </p>
+            <ul>
+              <li>Implemented custom shaders using ShaderGraph</li>
+              <li>Designed procedural animation system for marine life</li>
+              <li>Created engaging upgrade mechanics</li>
+            </ul>
+          </div>
+
+          <div class="portfolio-item">
+            <h3 class="persona-text" data-text="Dream Runner">Dream Runner</h3>
+            <img src="media/ss.png" alt="Dream Runner Screenshot" />
+            <p>
+              An Endless Runner Unity Game with an atmospheric theme. Employs
+              procedural scene generation, dynamic weather, and day/night cycle.
+            </p>
+            <ul>
+              <li>Developed procedural level generation algorithm</li>
+              <li>Implemented dynamic weather system</li>
+              <li>Created smooth day/night cycle transitions</li>
+            </ul>
           </div>
         </div>
-      </main>
       </main>
 
       <footer class="footer">
@@ -102,6 +106,11 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        const video = document.querySelector("video");
+        if (video) {
+          video.playbackRate = 1.5;
+        }
+
         const buttons = document.querySelectorAll(".game-button");
         buttons.forEach((button) => {
           button.addEventListener("click", function () {
